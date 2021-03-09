@@ -1,0 +1,32 @@
+body {
+    background-color: #222222;
+}
+
+:root {
+	--grid-cols: 1;
+	--grid-rows: 1;
+}
+
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: #dddddd;
+    border: 1px solid transparent;
+    /*border: 1px solid #aaaaaa;*/
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    /*border: 1px solid #aaaaaa;*/
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: 0s 180s;
+}
+
+.grid-item:hover {
+    background-color: #000000;
+    transition: 0s;
+}
