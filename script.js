@@ -1,4 +1,4 @@
-const container = document.getElementById("container");
+const container = document.getElementById("grid-container");
 
 function makeGrid(rows, cols) {
     container.style.setProperty('--grid-rows', rows);
