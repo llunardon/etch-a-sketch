@@ -8,6 +8,7 @@
     <body>
         <div id="container">
             <div id="sidebar-left">
+                <button class="sidebar-left-button">Black</button>
             </div>
             <div id="grid-container">
                 <!-- Here will be placed the grid -->
@@ -15,6 +16,11 @@
             <div id="sidebar-right">
             </div>
             <div id="footer">
+                <button class="footer-button" onclick="makeGrid(8, 8)">8 x 8</button>
+                <button class="footer-button" onclick="makeGrid(16, 16)">16 x 16</button>
+                <button class="footer-button" onclick="makeGrid(32, 32)">32 x 32</button>
+                <button class="footer-button" onclick="resetGrid()">Clear</button>
+                <button class="footer-button" onclick="makeCustomGrid()">Custom</button>
             </div>
         </div>
         <script src="script.js"></script>
